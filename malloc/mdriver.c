@@ -90,7 +90,7 @@ typedef struct {
  *******************/
 int verbose = 0;        /* global flag for verbose output */
 static int errors = 0;  /* number of errs found when running student malloc */
-char msg[MAXLINE];      /* for whenever we need to compose an error message */
+char msg[MAXLINE*2];    /* for whenever we need to compose an error message */
 
 /* Directory where default tracefiles are found */
 static char tracedir[MAXLINE] = TRACEDIR;
@@ -446,6 +446,7 @@ static void remove_range(range_t **ranges, char *lo)
         }
         prevpp = &(p->next);
     }
+    (void) size;  // Unused.
 }
 
 /*
