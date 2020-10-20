@@ -171,6 +171,16 @@ NOTES:
    - 3 additional Zanabazar Square characters */
 //1
 /* 
+ * bitAnd - x&y using only ~ and | 
+ *   Example: bitAnd(6, 5) = 4
+ *   Legal ops: ~ |
+ *   Max ops: 8
+ *   Rating: 1
+ */
+int bitAnd(int x, int y) {
+  return 2;
+}
+/* 
  * bitMatch - Create mask indicating which bits in x match those in y
  *            using only ~ and & 
  *   Example: bitMatch(0x7, 0xE) = 0x6
@@ -192,6 +202,17 @@ int bitNor(int x, int y) {
   return 2;
 }
 //2
+/* 
+ * allOddBits - return 1 if all odd-numbered bits in word set to 1
+ *   where bits are numbered from 0 (least significant) to 31 (most significant)
+ *   Examples allOddBits(0xFFFFFFFD) = 0, allOddBits(0xAAAAAAAA) = 1
+ *   Legal ops: ! ~ & ^ | + << >>
+ *   Max ops: 12
+ *   Rating: 2
+ */
+int allOddBits(int x) {
+  return 2;
+}
 /* 
  * anyEvenBit - return 1 if any even-numbered bit in word set to 1
  *   where bits are numbered from 0 (least significant) to 31 (most significant)

@@ -45,11 +45,16 @@ test_rec test_set[] = {
    - 285 hentaigana
    - 3 additional Zanabazar Square characters */
 //1
+ {"bitAnd", (funct_t) bitAnd, (funct_t) test_bitAnd, 2, "| ~", 8, 1,
+  {{TMin, TMax},{TMin,TMax},{TMin,TMax}}},
  {"bitMatch", (funct_t) bitMatch, (funct_t) test_bitMatch, 2, "& ~ |", 14, 1,
   {{TMin, TMax},{TMin,TMax},{TMin,TMax}}},
  {"bitNor", (funct_t) bitNor, (funct_t) test_bitNor, 2, "& ~", 8, 1,
   {{TMin, TMax},{TMin,TMax},{TMin,TMax}}},
 //2
+ {"allOddBits", (funct_t) allOddBits, (funct_t) test_allOddBits, 1,
+    "! ~ & ^ | + << >>", 12, 2,
+  {{TMin, TMax},{TMin,TMax},{TMin,TMax}}},
  {"anyEvenBit", (funct_t) anyEvenBit, (funct_t) test_anyEvenBit, 1,
     "! ~ & ^ | + << >>", 12, 2,
   {{TMin, TMax},{TMin,TMax},{TMin,TMax}}},

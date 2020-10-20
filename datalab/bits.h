@@ -34,11 +34,15 @@
    - 285 hentaigana
    - 3 additional Zanabazar Square characters */
 //1
+int bitAnd(int, int);
+int test_bitAnd(int, int);
 int bitMatch(int, int);
 int test_bitMatch(int, int);
 int bitNor(int, int);
 int test_bitNor(int, int);
 //2
+int allOddBits();
+int test_allOddBits();
 int anyEvenBit();
 int test_anyEvenBit();
 int fitsBits(int, int);

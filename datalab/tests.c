@@ -61,6 +61,10 @@ unsigned f2u(float f) {
    - 285 hentaigana
    - 3 additional Zanabazar Square characters */
 //1
+int test_bitAnd(int x, int y)
+{
+  return x&y;
+}
 int test_bitMatch(int x, int y)
 {
     int i;
@@ -77,6 +81,13 @@ int test_bitNor(int x, int y)
   return ~(x|y);
 }
 //2
+int test_allOddBits(int x) {
+  int i;
+  for (i = 1; i < 32; i+=2)
+      if ((x & (1<<i)) == 0)
+   return 0;
+  return 1;
+}
 int test_anyEvenBit(int x) {
   int i;
   for (i = 0; i < 32; i+=2)
